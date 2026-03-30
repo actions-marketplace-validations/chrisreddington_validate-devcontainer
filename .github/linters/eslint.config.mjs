@@ -1,4 +1,4 @@
-import vitest from 'eslint-plugin-vitest'
+import vitest from '@vitest/eslint-plugin'
 import typescriptEslint from '@typescript-eslint/eslint-plugin'
 import globals from 'globals'
 import tsParser from '@typescript-eslint/parser'
@@ -28,7 +28,8 @@ export default [
       'coverage/**',
       'test/**',
       '**/.github/linters/**',
-      'vitest.config.mts'
+      'vitest.config.mts',
+      'rollup.config.ts'
     ]
   },
   ...compat.extends(
